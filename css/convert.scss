@@ -1,0 +1,51 @@
+/*
+    Convert this code to more efficient SCSS pattern
+    Things to use: Nesting, variables and parent selector
+*/
+$red: #a00; /*variable*/
+.book {
+    .book-title{
+        .book-body{ /*Nesting*/
+            color: $red;
+            margin-bottom: 10px;
+        }
+    }
+    .btn {
+        background: $red;
+        color: #fff;
+        &:hover{ /*parent*/
+            background: #440000;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* original CSS
+.book .book-title {
+    color: #a00;
+    margin-bottom: 10px;
+}
+
+.book .book-body {
+    color: #a00;
+    margin-bottom: 10px;
+}
+
+.book .btn {
+    background: #a00;
+    color: #fff;
+}
+
+.book .btn:hover {
+    background: #440000;
+}
+
+*/
